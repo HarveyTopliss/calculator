@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  color: black;
+  background-color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+#calculator {
+  height: 540px;
+  width: 500px;
+  margin-top: 125px;
+  margin-left: 175px;
+  border: solid 0.5px rgb(167, 167, 167);
+  background-color: white;
+}
+
+#screen {
+  height: 75px;
+  width: 460px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 21px;
+  border: solid 1px #ddd;
+  border-radius: 1px;
+  background-color: none;
+  transition: all 0.1s ease-in-out;
+}
+
+#screen > p {
+  height: 75px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  letter-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color: black;
+  text-align: left;
+  overflow-x: auto;
+}
+
+#screen:hover {
+  border: solid 1px #bbb;
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#operators {
+  height: 60px;
+  width: 500px;
+  margin-left: 0px;
+  margin-right: -2px;
+  margin-top: 21px;
+  border: none;
+  background-color: transparent;
+}
+
+#panel {
+  width: 500px;
+  height: 340px;
+  margin-top: 2px;
+  border: none;
+  background-color: transparent;
+}
+
+#equals {
+  width: 100px;
+  height: 305px;
+  margin-left: 20px;
+  margin-top: 21px;
+  border-radius: 2px;
+  float: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  background-color: lightblue;
+  border: solid 1px rgb(130, 168, 180);
+  cursor: pointer;
+}
+
+#equals:hover {
+  border: solid 1px rgb(107, 151, 165);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgb(149, 203, 221);
+}
+
+#left-panel {
+  width: 360px;
+  height: 340px;
+  margin-left: 0px;
+  border: none;
+  float: left;
+}
+
+.button-x {
+  height: 60px;
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 2px;
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  background-color: #ddd;
+  border: solid 1px #bbb;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.button-x:hover {
+  border: solid 1px #aaa;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ccc;
+}
+
+.button-x:active {
+  font-weight: bold;
+}
+
+.button-y {
+  height: 60px;
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 2px;
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  background-color: #f9f9f9;
+  border: solid 1px #d4d4d4;
+  cursor: pointer;
+}
+
+.button-y:hover {
+  border: solid 1px #cccccc;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;
+}
+
+.button-y:active {
+  font-weight: bold;
+}
+
+#clear {
+  height: 60px;
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  float: left;
+  background-color: rgb(255, 196, 196);
+  border: solid 1px rgb(189, 131, 131);
+  cursor: pointer;
+}
+
+#clear:hover {
+  border: solid 1px rgb(168, 113, 113);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgb(252, 180, 180);
+}
+
+#clear:active {
+  font-weight: bold;
+}
+
+.row {
+  height: 60px;
+  width: 360px;
+  margin-top: 21px;
+  float: left;
+}
